@@ -32,7 +32,7 @@ class RecipeView {
         this.#parentElement.insertAdjacentHTML('afterbegin', markup);
       };
 
-      renderError(message = this.#message) {
+      renderError(message = this.#errorMessage) {
         const markup = `
           <div class="error">
             <div>
@@ -40,14 +40,14 @@ class RecipeView {
                 <use href="${icons}#icon-alert-triangle"></use>
               </svg>
             </div>
-            <p> ${message} </p>
+            <p>${message}</p>
           </div>
           `;
         this.#clear();
-        this.#parentElement.insertAdjacentHTML('afterbegin', markup);
+        this.#parentElement.insertAdjacentHTML('afterbegin',markup);
       }
 
-      renderMessage(message = this.#errorMessage) {
+      renderMessage(message = this.#message) {
         const markup = `
           <div class="message">
             <div>

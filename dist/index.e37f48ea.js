@@ -594,7 +594,6 @@ const controlRecipes = async function() {
         (0, _recipeViewJsDefault.default).render(_modelJs.state.recipe);
     // const recipeView = new recipeView(model.state.recipe)
     } catch (err) {
-        console.log(err);
         (0, _recipeViewJsDefault.default).renderError();
     }
 };
@@ -1878,7 +1877,7 @@ const loadRecipe = async function(id) {
         console.log(state.recipe);
     } catch (err) {
         // Temporary error handling
-        console.error(`${err} 💥💥💥💥💥💥💥`);
+        console.error(`${err} 💥💥💥`);
         throw err;
     }
 };
@@ -2542,6 +2541,8 @@ var _fractional = require("fractional");
 class RecipeView {
     #parentElement = document.querySelector(".recipe");
     #data;
+    #errorMessage = "We could not find that recipe. Please try another one!";
+    #message = "";
     render(data) {
         this.#data = data;
         const markup = this.#generateMarkup();
@@ -2562,7 +2563,7 @@ class RecipeView {
         this.#clear();
         this.#parentElement.insertAdjacentHTML("afterbegin", markup);
     }
-    renderError(message) {
+    renderError(message = this.#errorMessage) {
         const markup = `
           <div class="error">
             <div>
@@ -2572,7 +2573,21 @@ class RecipeView {
             </div>
             <p>${message}</p>
           </div>
-        `;
+          `;
+        this.#clear();
+        this.#parentElement.insertAdjacentHTML("afterbegin", markup);
+    }
+    renderMessage(message = this.#message) {
+        const markup = `
+          <div class="message">
+            <div>
+              <svg>
+                <use href="${(0, _iconsSvgDefault.default)}#icon-smile"></use>
+              </svg>
+            </div>
+            <p>${message}</p>
+          </div>
+          `;
         this.#clear();
         this.#parentElement.insertAdjacentHTML("afterbegin", markup);
     }
