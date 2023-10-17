@@ -2,9 +2,10 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,6 @@
     "regenerator-runtime": "^0.14.0",
     "sass": "^1.68.0"
   },
-  "main": "index.js",
+  
   "keywords": []
 }
