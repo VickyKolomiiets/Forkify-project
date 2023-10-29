@@ -7,13 +7,15 @@ A web application for finding and saving your favorite recipes.
 Forkify Recipe App is a powerful and user-friendly web application that allows users to search for recipes from various sources, save their favorite recipes, and create personalized shopping lists. It simplifies the process of finding and organizing recipes, making it convenient for users to plan their meals and manage their ingredients.
 
 Find any receipt that you want.
-![image](https://github.com/VickyKolomiiets/Forkify-project/assets/122746055/dced580e-e16f-4821-a4b4-4a553cb32242)
+![1](https://github.com/VickyKolomiiets/Forkify-project/assets/122746055/33114d62-d20d-4356-bc4f-3b106791ffcf)
+![2](https://github.com/VickyKolomiiets/Forkify-project/assets/122746055/9bc19491-d9db-41f0-858e-a73e0af2c7b4)
 
 Number of servings can be changed. 
-![image](https://github.com/VickyKolomiiets/Forkify-project/assets/122746055/30fd6890-b0c0-44f9-b36f-61cbf06b99a0)
+![3](https://github.com/VickyKolomiiets/Forkify-project/assets/122746055/bcd570b4-394c-4c7a-9171-4a3e0001b2d9)
+
 
 Easily bookmark or unbookmard the selected recipe.
-![image](https://github.com/VickyKolomiiets/Forkify-project/assets/122746055/d10eb684-d672-48e6-a016-4fd20789e4b1)
+![4](https://github.com/VickyKolomiiets/Forkify-project/assets/122746055/e84574c3-9ac8-4fdb-bf4a-8d0c8f68f783)
 
 ## Features
 
@@ -82,9 +84,3 @@ Contributions are welcome! If you would like to contribute to Forkify Recipe App
 - The Recipe API - [recipe-api.com](https://forkify-api.herokuapp.com/v2)
 - The Spoonacular API - [spoonacular.com](https://spoonacular.com/food-api)
 - [Font Awesome](https://fontawesome.com) - Icons and fonts
-
-## Contact
-
-If you have any questions, suggestions, or feedback, please feel free to contact me at andrewtsegaye7@gmail.com.
-
-Feel free to customize and update the content based on your specific project details. Don't forget to include relevant images, icons, and the necessary license file (e.g. LICENSE)
